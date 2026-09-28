@@ -7,6 +7,7 @@ SELECT m.match_id,
        m.result,
        m.match_winner,
        m.player_of_match,
+       m.toss_winner,
        m.toss_decision
 from v_matches_venue m
 join v_city_clean c on c.match_id = m.match_id
